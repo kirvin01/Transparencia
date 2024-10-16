@@ -17,10 +17,11 @@ class PostFactory extends Factory
     public function definition(): array
     {
         return [
-            'title'=> $title =$this->faker->sentencel(),
+            'title'=> $title =$this->faker->sentence(),
             'slug'=> Str::slug($title),
-            'body'=> $this->faker->text(2200),
-            //
+            'body'=> $this->faker->text(2200),            
         ];
+
+        
     }
 }
